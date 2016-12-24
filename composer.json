@@ -21,14 +21,13 @@
   },
   "autoload": {
     "psr-4": {
-      "Stefanius\\SingletonPatter\\": "src/"
+      "Stefanius\\SingletonPattern\\": "src/"
     }
   },
   "autoload-dev": {
     "classmap": [
       "tests/SingletonTest.php",
-      "tests/TestClass.php",
-      "src/"
+      "tests/TestClass.php"
     ]
   },
   "config": {
