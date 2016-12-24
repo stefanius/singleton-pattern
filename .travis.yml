@@ -1,0 +1,23 @@
+sudo: false
+language: php
+
+php:
+  - 7.0
+  - 7.1
+
+matrix:
+  fast_finish: true
+
+install:
+  - composer self-update
+
+before_script:
+  - composer install --no-interaction --no-scripts
+
+script:
+  - ./vendor/bin/phpunit --coverage-clover=coverage.clover
+
+notifications:
+  slack:
+    rooms:
+      - stefanius:V64KfmqnpFtzsYuWfHI65Clg#travis

@@ -1,0 +1,29 @@
+{
+  "name": "stefanius/singleton-pattern",
+  "description": "Helper package to implement a Singleton class.",
+  "keywords": ["singleton", "framework", "agnostic", "symfony", "laravel", "zend", "stefanius", "design", "pattern"],
+  "license": "MIT",
+  "type": "project",
+  "require": {
+    "php": ">=7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~5.7",
+    "friendsofphp/php-cs-fixer": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Stefanius\\SingletonPatter\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "classmap": [
+      "tests/SingletonTest.php",
+      "tests/TestClass.php",
+      "src/"
+    ]
+  },
+  "config": {
+    "preferred-install": "dist"
+  }
+}
